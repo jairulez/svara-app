@@ -1,1 +1,18 @@
-
+{
+  "name": "svara",
+  "version": "0.1.0",
+  "description": "SVARA — Your inner rhythm, understood. AI-assisted personal wellness intelligence (preview/MVP).",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "migrate": "node scripts/migrate.js",
+    "seed": "node scripts/seed.js",
+    "setup": "node scripts/migrate.js && node scripts/seed.js",
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "build": "node scripts/build.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {}
+}
